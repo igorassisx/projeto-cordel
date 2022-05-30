@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Passion+One & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; 
+    --fonte2: 'Passion One', cursiva;
+    --fonte3: 'Sriracha', cursiva;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+    font-size: 1em;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(46, 45, 45);
+    color: white;
+    box-shadow: inset 6px 6px 15px 0px black;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.514);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
